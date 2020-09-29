@@ -42,6 +42,12 @@ At Hackstation
 <h4 align="center"><b>Ashish Nagpal</b></a>
 <br></br>  
 
+<h2 align= "center"><b> Open-Source</b></h2>
+
+<div align="center">
+<img src="./assets/github-files/hackoctober.png">
+</div>
+
 ## Version 1.0
 1. Homepage - Let us know who are user will be. For now we will be working on Developer side option of the web-app.
 2. Profile page.
