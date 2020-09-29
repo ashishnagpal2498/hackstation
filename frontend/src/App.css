@@ -28,6 +28,35 @@
   color: #61dafb;
 }
 
+.header-wrapper{
+	display: flex;
+	justify-content: center;
+	background-color: #61dafb;
+	padding: 10px 20px;
+}
+.header-logo{
+	flex: 1 1 40%;
+}
+.header-options{
+	flex: 1 1 60%;
+	list-style-type: none;
+}
+.header-options li {
+	display: inline-block;
+	padding: 10px;
+}
+.footer-wrapper{
+	display: flex;
+	padding: 20px;
+}
+.footer-logo{
+	flex: 1 1 30%;
+	min-height: 100px;
+}
+.footer-options{
+	
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
