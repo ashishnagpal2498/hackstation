@@ -12,8 +12,9 @@ We at hackStation provide a platform to share your work in number. Get your work
 ## Skills Required
 - Front-end
   - HTML, CSS, JavaScript
-  - ReactJS
+  - ReactJS, Context API or Redux
   - Graphjs / Amcharts.
+	- Axios
 - Backend
   - NodeJs
   - ExpressJs
