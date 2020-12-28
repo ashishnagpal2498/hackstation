@@ -54,9 +54,12 @@ At Hackstation
 <img src="./assets/github-files/hackoctober.png">
 </div>
 <h3 align= "center"><b> Winter of Code</b></h3>
-<div align="center" style="padding-bottom: 50px">
-<img src="./assets/github-files/DWOC.jpeg" width="45%" style="padding-top: 20px;display: inline-block;margin: 0 10px">
-<img src="./assets/github-files/SWOC.png" width="45%" style="padding-top: 20px;display: inline-block; margin: 0 10px">
+<div align="center" style="padding: 20px 0 50px; width:100%; height:100%">
+<span style="display: inline-block;padding: 0 10px; width:45%">
+<img src="./assets/github-files/DWOC.jpeg" width="100%" style="display: inline-block"></span>
+<span  style="display: inline-block; background-color:rgba(0,0,0,0.5);width:45%; height:100%;padding: 0 10px;">
+<img src="./assets/github-files/SWOC.png" width="100%" style="display: inline-block"></span>
+
 </div>
 
 ## Version 1.0
