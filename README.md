@@ -1,6 +1,8 @@
 ## Description
-Ever missed a coding contest because you completely forget about it or misinterpret the timing, worked anonymous number of hours and still aren't able to convince your boss that you're working. 
+
+Ever missed a coding contest because you completely forget about it or misinterpret the timing, worked anonymous number of hours and still aren't able to convince your boss that you're working.
 Well we get it all covered for you.
+
 <div align="center">  
 <img src ="assets/github-files/codingGif.gif" />  
 </div>
@@ -10,11 +12,12 @@ We at hackStation provide a platform to share your work in number. Get your work
 <br></br>
 
 ## Skills Required
+
 - Front-end
   - HTML, CSS, JavaScript
   - ReactJS, Context API or Redux
   - Graphjs / Amcharts.
-	- Axios
+  - Axios
 - Backend
   - NodeJs
   - ExpressJs
@@ -24,14 +27,16 @@ We at hackStation provide a platform to share your work in number. Get your work
 - Database
   - MongoDB
 - With GraphQL API.
-<br></br>
+  <br></br>
 
 ## What we do
-At Hackstation 
+
+At Hackstation
+
 - We track your number of hours of coding
-![](assets/github-files/graphImage.jpg)
+  ![](assets/github-files/graphImage.jpg)
 - Remind you about various upcoming contests
-![](assets/github-files/reminderImage.jpg)
+  ![](assets/github-files/reminderImage.jpg)
 
 <h2 align= "center"><b> Project Maintainer</b></h2>
 
@@ -41,23 +46,32 @@ At Hackstation
 
 <a href="https://github.com/ashishnagpal2498">
 <h4 align="center"><b>Ashish Nagpal</b></a>
-<br></br>  
+<br></br>
 
 <h2 align= "center"><b> Open-Source</b></h2>
 
 <div align="center">
 <img src="./assets/github-files/hackoctober.png">
 </div>
+<h3 align= "center"><b> Winter of Code</b></h3>
+<div align="center" style="padding-bottom: 50px">
+<img src="./assets/github-files/DWOC.jpeg" width="45%" style="padding-top: 20px;display: inline-block;margin: 0 10px">
+<img src="./assets/github-files/SWOC.png" width="45%" style="padding-top: 20px;display: inline-block; margin: 0 10px">
+</div>
 
 ## Version 1.0
+
 1. Homepage - Let us know who are user will be. For now we will be working on Developer side option of the web-app.
 2. Profile page.
 3. Latest - This will allow user to view various upcoming contests of various platforms.
 4. User Authentication - Login/Signup.
 5. Public profile view
 6. Dashboard
-<br></br>
+   <br></br>
 
 ## Features Implemented later
+
 1. Organisation login- connecting employees with the superior authority.
 2. Dashboard divided by teams
+
+Logo design by [Roy Quilor](https://www.quilor.com/) is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0)
