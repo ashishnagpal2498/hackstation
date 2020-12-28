@@ -48,17 +48,18 @@ At Hackstation
 <h4 align="center"><b>Ashish Nagpal</b></a>
 <br></br>
 
-<h2 align= "center"><b> Open-Source</b></h2>
+<h1 align= "center"><b> Open-Source</b></h1>
 
 <div align="center">
 <img src="./assets/github-files/hackoctober.png">
 </div>
-<h3 align= "center"><b> Winter of Code</b></h3>
-<div align="center" style="padding: 20px 0 50px; width:100%; height:100%">
-<span style="display: inline-block;padding: 0 10px; width:45%">
-<img src="./assets/github-files/DWOC.jpeg" width="100%" style="display: inline-block"></span>
-<span  style="display: inline-block; background-color:rgba(0,0,0,0.5);width:45%; height:100%;padding: 0 10px;">
-<img src="./assets/github-files/SWOC.png" width="100%" style="display: inline-block"></span>
+<h2 align= "center" style="padding: 10px"><b> Winter of Code</b></h2>
+<div align="center" style="padding: 20px 0 50px; display: flex;align-items:center">
+<span style="flex:1; padding:0 10px">
+<img src="./assets/github-files/DWOC.jpeg"></span>
+<span  style="flex:1;background-color:rgb(0,0,0);padding: 0 10px;">
+<img src="./assets/github-files/SWOC.png">
+</span>
 
 </div>
 
