@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 10%;
+}
+
+.header .header-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.header .header-brand a {
+  text-decoration: none;
+}
+
+.header .header-nav-links {
+  padding-inline-start: 0;
+}
+
+.header .header-link-item {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.header .header-link {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.header .header-link {
+  color: #6f6f6f;
+}
+
+.header .header-link-active {
+  font-weight: 700;
+  color: #000;
+}
+
+.header .header-link:hover {
+  outline: 0;
+  border-bottom: 2px solid #000;
+}
+
+@media all and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+  .header .header-brand {
+    margin: 0 auto;
+  }
+}
