@@ -66,7 +66,7 @@ git push origin <brach-name>
 
 **8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
-**9.** **Congratulations!** Sit and relax, you've made your contribution to [stockinator](https://github.com/ashishnagpal2498/hackstation) project.
+**9.** **Congratulations!** Sit and relax, you've made your contribution to [hackstation](https://github.com/ashishnagpal2498/hackstation) project.
 
 
 ***:trophy: After this, project leaders and mentors will review the changes and will merge your PR if they are found good, otherwise we will suggest the required changes.***
