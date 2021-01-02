@@ -24,4 +24,87 @@ Refer to the following articles on the basics of Git and Github and can also con
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
 
+## ⭐HOW TO MAKE A PULL REQUEST:
 
+**1.** Fork [this](https://github.com/ashishnagpal2498/hackstation) repository.
+Click on the <a href="https://github.com/ashishnagpal2498/hackstation"><img src="https://img.icons8.com/ios/24/000000/code-fork.png"></a> symbol at the top right corner.
+
+**2.** Clone the forked repository. Open terminal and type:
+
+```bash
+git clone https://github.com/<your-github-username>/hackstation.git
+```
+
+**3.** Navigate to the project directory.
+
+```bash
+cd hackstation
+```
+
+**4.** Make a feature branch
+```bash
+git checkout -b <branch-name>
+
+```
+**5.** Make changes in source code/ project.
+
+**6.** Stage your changes and commit
+
+```bash
+#Add changes to Index
+git add .
+
+#Commit to the local repo
+git commit -m "<your_commit_message>"
+```
+
+**7.** Push your local commits to the remote repo.
+
+```bash
+git push origin <brach-name>
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
+
+**9.** **Congratulations!** Sit and relax, you've made your contribution to [stockinator](https://github.com/ashishnagpal2498/hackstation) project.
+
+
+***:trophy: After this, project leaders and mentors will review the changes and will merge your PR if they are found good, otherwise we will suggest the required changes.***
+
+## Style Guides for Git Commit Messages:memo:
+
+#### Here's a list of some good to have points, that can add more value to your contribution logs.
+
+- Use the present tense (example: "Add feature" and not "Added feature")
+- Use the imperative mood (example: "Move item to...", instead of "Moves item to...")
+- Limit the first line (also called subject line) to 50 characters or less
+- Capitalize the subject line
+- Separate subject from body with a blank line
+- Do not end the subject line with a period
+- Wrap the body at 72 characters
+- Use the body to explain what, why, vs, and how
+- Reference issues and pull requests liberally after the first line
+
+For more detailed reference to the above points, refer here: https://chris.beams.io/posts/git-commit.
+
+## 💥 Issues:
+For major changes, you are welcomed to open an issue  about what you would like to contribute. Enhancements will be appreciated.
+
+#### All the Best!🥇
+
+<p align = "center">
+
+<a href="https://github.com/akrish4"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="built by developers"></a>
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](## 💥 Issues:
+For major changes, you are welcomed to open an issue  about what you would like to contribute. Enhancements will be appreciated.
+
+#### All the Best!🥇
+
+<p align = "center">
+
+<a href="https://github.com/akrish4"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="built by developers"></a>
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/ashishnagpal2498/hackstation)
+
+</p>)
+
+</p>
