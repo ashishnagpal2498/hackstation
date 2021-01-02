@@ -74,7 +74,7 @@ At Hackstation
    <br></br>
 
 ## 💥 How to Contribute ?
-- If you wish to contribute kindly check the [CONTRIBUTION.md](https://github.com/ashishnagpal2498/hackstation/blob/master/CONTRIBUTING.md)🤝
+- If you wish to contribute kindly check the [CONTRIBUTING.md](https://github.com/ashishnagpal2498/hackstation/blob/master/CONTRIBUTING.md)🤝
 ## Features Implemented later
 
 
