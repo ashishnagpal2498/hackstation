@@ -73,7 +73,10 @@ At Hackstation
 6. Dashboard
    <br></br>
 
+## 💥 How to Contribute ?
+- If you wish to contribute kindly check the [CONTRIBUTING.md](https://github.com/ashishnagpal2498/hackstation/blob/master/CONTRIBUTING.md)🤝
 ## Features Implemented later
+
 
 1. Organisation login- connecting employees with the superior authority.
 2. Dashboard divided by teams
