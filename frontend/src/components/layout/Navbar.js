@@ -16,8 +16,7 @@ const Navbar = () => {
     <header className="header">
       <div className="header-brand">
         <NavLink exact to="/">
-          {/* <img src="" alt="logo-here" /> */}
-          <span>HackStation</span>
+          <img height='50px' src="\header-logo.png" />
         </NavLink>
       </div>
       <nav className="header-nav">
