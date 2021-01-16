@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import "../styles/Navbar.css";
 
 const links = [
   { name: "home", to: "/" },
   { name: "dashboard", to: "/dashboard" },
   { name: "about", to: "/about" },
-  { name: "upcoming", to: "/upcoming" },
-  { name: "login/signup", to: "/login" }
+  { name: "upcoming", to: "/upcoming" }
 ];
 
 const Navbar = () => {
@@ -33,6 +34,16 @@ const Navbar = () => {
               </NavLink>
             </li>
           ))}
+          <li key={links.length+1} className="header-link-item">
+              <NavLink
+                exact
+                to="/login"
+                className="header-link"
+                activeClassName="header-link-active"
+              >
+                <FontAwesomeIcon icon={faUserAlt} />
+              </NavLink>
+            </li>
         </ul>
       </nav>
     </header>
