@@ -3,15 +3,43 @@ img{
     width: 200px;
 }
 .footer-wrapper{
+    display: inline-block;
+    display: flex;
     color: white;
     background: #6B7280;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 100%;   
+}
+.description{
+    justify-content: center;
+}
+h4{
+    font-size: 1.5rem;
+}
+.footer-logo, .about, .contact{
+    width: 30%;
+    padding-left: 8rem;
 }
 .links li{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 25px;
     color: white;
 }
-
+button{
+    background: black;
+    color: aliceblue;
+    padding: 10px;
+}
+@media all and (max-width: 796px){
+      .footer-wrapper{
+          padding-left: 0;
+          flex-direction: row;
+          width: auto;
+          margin: 0 auto;
+          padding-left: 9rem;
+      }
+      .footer-logo, .about, .contact{
+          padding-left: 0;
+      }
+}
