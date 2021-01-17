@@ -1,0 +1,17 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+.footer-wrapper{
+    color: white;
+    background: #6B7280;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.links li{
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+}
+

@@ -9,7 +9,10 @@ function App() {
 	<Router>
 		<div className="App">
 			<Navbar/>
-			<Footer/>
+			<div class="page-container">
+				<div class="content-wrap"></div>
+				<Footer/>
+			</div>
 		</div>
 	</Router>
     
