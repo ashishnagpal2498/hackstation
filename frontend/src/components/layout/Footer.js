@@ -8,7 +8,7 @@ const Footer = () => {
 				<div className="footer-options">
 					<div className="footer-logo">
 						<a href="/">
-							<img src="https://user-images.githubusercontent.com/36301481/104619223-a0b0ad00-56b3-11eb-84ce-9b845b1729b5.png" alt="footer"/>
+							<img src="./logo.png" alt="footer"/>
 						</a>
 					</div>
 				</div>

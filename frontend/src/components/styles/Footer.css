@@ -9,7 +9,6 @@ img{
     background: #6B7280;
     position: relative;
     bottom: 0;
-    width: 100%;   
 }
 .description{
     justify-content: center;
@@ -30,6 +29,7 @@ button{
     background: black;
     color: aliceblue;
     padding: 10px;
+    border: none;
 }
 @media all and (max-width: 796px){
       .footer-wrapper{
@@ -40,6 +40,10 @@ button{
           padding-left: 9rem;
       }
       .footer-logo, .about, .contact{
+          padding-left: 0;
+      }
+      .links li{
+          padding-top: 10;
           padding-left: 0;
       }
 }
