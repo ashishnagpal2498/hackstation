@@ -47,3 +47,17 @@ button{
           padding-left: 0;
       }
 }
+@media all and (max-width: 520px){
+    .footer-wrapper{
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        padding-left: 8rem;
+        bottom: 0;
+    }
+    .about, .contact{
+        padding-left: 3rem;
+    }
+
+}
+
