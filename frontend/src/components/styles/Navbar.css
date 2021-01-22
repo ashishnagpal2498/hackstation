@@ -11,12 +11,26 @@
   margin-right: auto;
 }
 
+.header img{
+  width: 75px;
+  vertical-align: middle;
+}
+
 .header .header-brand a {
   text-decoration: none;
 }
 
 .header .header-nav-links {
   padding-inline-start: 0;
+}
+
+.header .header-nav-links .user{
+  margin-left: 100px;
+}
+
+.header .header-nav-links .user:hover{
+  border-bottom: none;
+  color: #000;
 }
 
 .header .header-link-item {
