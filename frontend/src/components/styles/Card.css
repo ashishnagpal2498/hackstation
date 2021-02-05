@@ -1,0 +1,45 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    width: 300px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+}
+
+.img {
+    object-fit: contain;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.description {
+    padding: 0.5rem 0.3rem;
+}
+
+.date {
+    color: grey;
+}
+
+.read_more {
+    margin: 1rem auto 0 auto; 
+    width: fit-content;
+    padding: 0.5rem 0.7rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+
+@media only screen and (max-width: 380px) {
+    .Card {
+        width: 250px;
+        margin: 1rem 0.5rem;
+    }
+}
