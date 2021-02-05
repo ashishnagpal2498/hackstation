@@ -1,7 +1,7 @@
 .Card {
     display: flex;
     flex-direction: column;
-    background: #eee;
+    background: rgb(250, 250, 250);
     width: 300px;
     padding: 1rem;
     margin: 1rem;
@@ -21,6 +21,7 @@
 
 .description {
     padding: 0.5rem 0.3rem;
+    font-size: 0.9rem;
 }
 
 .date {
@@ -31,10 +32,16 @@
     margin: 1rem auto 0 auto; 
     width: fit-content;
     padding: 0.5rem 0.7rem;
-    background-color: red;
+    background-color: #4e92df;
     color: white;
     font-weight: bold;
     outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.read_more:hover {
+    background-color: #2f7dd6;
 }
 
 @media only screen and (max-width: 380px) {
