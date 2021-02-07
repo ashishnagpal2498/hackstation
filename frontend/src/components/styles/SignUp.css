@@ -1,0 +1,84 @@
+.SignUp {
+    background-image: url(http://bit.ly/2gPLxZ4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: inherit;
+    width: fit-content;
+    height: 470px;
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+.container:before {
+    content: '';
+    width: 550px;
+    height: 550px;
+    background: inherit; 
+    position: absolute;
+    left: -25px; 
+    right: 0;
+    top: -25px;
+    bottom: 0;
+    box-shadow: inset 0 0 0 300px rgba(255,255,255,0.5);
+    filter: blur(10px);
+   }
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.body input{
+    padding: 0.5rem 1rem;
+    width: 350px;
+    font-size: 1.1rem;
+    margin-top: 1.3rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.button {
+    background-color: #324DE0;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 3px grey; 
+    margin: 2rem 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    filter: brightness(97%)
+}
+
+
+@media only screen and (max-width: 630px) {
+
+    .body input {
+        width: 250px;
+        font-size: 1rem;
+    }    
+}
