@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Card.css';
+import '../styles/Cards.css';
 
 function Card({img, title, description, date, time}) {
     return (
-        <div className="Card">
-            <img src={img} alt="Card" className="img"/>
+        <div className="card">
+            <img src={img} alt="card-img" className="img"/>
             <div className="title">{title}</div>
             <div className="description">{description}</div>
             <div className="date">Time: {date} {time}</div>
