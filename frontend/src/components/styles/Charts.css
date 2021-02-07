@@ -1,0 +1,26 @@
+.chart {
+    background-color: aliceblue;
+    margin: 1rem 0;
+}
+
+.chart-title {
+    font-size: 2rem;
+    padding: 1rem 0;
+    padding-top: 3rem;
+}
+
+.chart-container {
+    height: 500px;
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 580px) {
+    .chart-title {
+        font-size: 1.3rem;
+    }
+
+    .chart-container {
+        height: 300px;
+        margin: 0;
+    }
+}
