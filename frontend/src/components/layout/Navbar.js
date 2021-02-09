@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
-import FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome';
+import SignUp from './SignUp';
 
 const links = [
   { name: "home", to: "/" },
@@ -11,7 +12,10 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [displaySignup, setSignUpDisplay] = useState(false);
+
   return (
+    <>
     <header className="header">
       <div className="header-brand">
         <NavLink exact to="/">
@@ -43,9 +47,14 @@ const Navbar = () => {
               size="2x"
             />
           </NavLink>
+          <i className='header-link user' onClick={() => setSignUpDisplay(true)} >
+            <FontAwesome className="fas fa-user-plus" size="2x"/>
+          </i>
         </ul>
       </nav>
     </header>
+    {displaySignup ? <SignUp onClose={() => setSignUpDisplay(false)}/> : null}
+    </>
   );
 };
 

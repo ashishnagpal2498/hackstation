@@ -1,84 +1,151 @@
-.SignUp {
-    background-image: url(http://bit.ly/2gPLxZ4);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+:root{
+    --red-bg-color: #ff7a7a;
+    --green-color: hsl(154, 59%, 51%);
+    --blue-color: hsl(248, 32%, 49%);
+    --dark-blue-color: hsl(249, 10%, 26%);
+    --grayish-color: hsl(246, 25%, 77%);
 }
 
-.container {
-    background: inherit;
-    width: fit-content;
-    height: 470px;
-    position: absolute;
-    overflow: hidden;
+.container{
+    scroll-behavior: smooth;
+    width: 80%;
     margin: auto;
-    padding: 1rem;
-    border-radius: 40px;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container:before {
-    content: '';
-    width: 550px;
-    height: 550px;
-    background: inherit; 
-    position: absolute;
-    left: -25px; 
-    right: 0;
-    top: -25px;
-    bottom: 0;
-    box-shadow: inset 0 0 0 300px rgba(255,255,255,0.5);
-    filter: blur(10px);
-   }
-
-.title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    position: relative;
+.signup-wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.signup-txt{
+    margin-top: 100px;
+    padding: 30px;
+}
+.signup-txt h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-.body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.signup-form{
+    margin-top: 20px;
 }
 
-.body input{
-    padding: 0.5rem 1rem;
-    width: 350px;
-    font-size: 1.1rem;
-    margin-top: 1.3rem;
+
+.form-header{
+    background: var(--green-color);
+    height: 50px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px -1px #a3a5ae9d;
+    box-sizing: border-box;
+}
+.form-header p{
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.form-header span{
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.form-wrapper{
+    background-color: #fff;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-group input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid 1px var(--dark-blue-color);
+    font-size: 16px;
     outline: none;
-    border: 1px solid black;
-    border-radius: 7px;
+    box-sizing: border-box;
 }
-
-.button {
-    background-color: #324DE0;
-    color: white;
-    border-radius: 20px;
+.form-group  input:focus{
+    border: solid 2px var(--blue-color);
+}
+.errors{
+    border: solid 2px #ff0000!important;
+    background: url('../../images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.form-group button{
+    width: 100%;
+    height: 50px;
+    background-color: var(--blue-color);
+    color: #fff;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px -1px hsl(229, 6%, 66%);
     cursor: pointer;
-    padding: 0.7rem 1rem;
-    font-size: 1.1rem;
-    outline: none;
-    border: none;
-    box-shadow: 0 1px 3px grey; 
-    margin: 2rem 0;
-    cursor: pointer;
-    user-select: none;
+}
+.form-group .errors-txt{
+    color: red;
+    font-size: 13px;
+    font-weight: 200;
+    text-align: right;
+    padding: 0;
+    margin: 0;
 }
 
-.button:hover {
-    filter: brightness(97%)
+.terms-txt{
+    color: var(--dark-blue-color);
+    font-size: 13px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 20px;
 }
+.terms-txt span{
+    color: var(--red-bg-color);
+    font-weight: 600;
+}
+footer{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    padding: 20px;
+}
+@media(max-width:900px){
+    .signup-wrapper{
+        grid-template-columns: 100%;
+        margin-top: 20px;
+    }
+    .signup-txt{
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .signup-txt h1{
+        font-size: 25px;
+    }
 
-
-@media only screen and (max-width: 630px) {
-
-    .body input {
-        width: 250px;
-        font-size: 1rem;
-    }    
+    .form-header{
+        height: 65px;
+        font-size: 15px;
+    }
 }
