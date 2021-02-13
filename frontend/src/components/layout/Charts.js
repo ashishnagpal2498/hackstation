@@ -43,47 +43,57 @@ function Charts() {
             <div className="line-chart">
                 <div className="chart-title">Daily Activity</div>
                 <div className="chart-container">
-                    <Line
-                        data={{
-                            labels: dailyActivityData.labels,
-                            datasets: dailyActivityData.datasets
-                        }}
-                        options={{
-                            maintainAspectRatio: false,
-                            scales: {
-                                yAxes: [
-                                    {
-                                        ticks: {
-                                            beginAtZero: true,
+                    <div className="chart">
+                        <Line
+                            data={{
+                                labels: dailyActivityData.labels,
+                                datasets: dailyActivityData.datasets
+                            }}
+                            options={{
+                                maintainAspectRatio: false,
+                                scales: {
+                                    yAxes: [
+                                        {
+                                            ticks: {
+                                                beginAtZero: true,
+                                            },
                                         },
-                                    },
-                                ],
-                            }
-                        }}
-                    />
+                                    ],
+                                }
+                            }}
+                        />
+                    </div>
+                    <div className="chart-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ratione autem aspernatur ut, architecto neque saepe aliquid repellat quibusdam ducimus quae nulla commodi iure fugit.
+                    </div>
                 </div>
             </div>
             <div className="pie-chart">
                 <div className="chart-title">Programming Languages</div>
                 <div className="chart-container">
-                    <Pie
-                        data={{
-                            labels: programmingLanguagesData.labels,
-                            datasets: programmingLanguagesData.datasets
-                        }}
-                        options={{
-                            maintainAspectRatio: false,
-                            scales: {
-                                yAxes: [
-                                    {
-                                        ticks: {
-                                            beginAtZero: true,
+                    <div className="chart">
+                        <Pie
+                            data={{
+                                labels: programmingLanguagesData.labels,
+                                datasets: programmingLanguagesData.datasets
+                            }}
+                            options={{
+                                maintainAspectRatio: false,
+                                scales: {
+                                    yAxes: [
+                                        {
+                                            ticks: {
+                                                beginAtZero: true,
+                                            },
                                         },
-                                    },
-                                ],
-                            }
-                        }}
-                    />
+                                    ],
+                                }
+                            }}
+                        />
+                    </div>
+                    <div className="chart-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum rem fugit magni expedita, nemo ratione, vero dolorum amet natus reiciendis quia aspernatur magnam libero?
+                    </div>
                 </div>
             </div>
         </div>

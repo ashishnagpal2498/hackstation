@@ -13,10 +13,21 @@
 
 .chart-title {
     font-size: 2rem;
+    padding: 0.5rem 0;
 }
 
 .chart-container {
-    height: 40vh;
+    display: flex;
+    height: 90%;
+}
+
+.chart {
+    width: 70%;
+}
+
+.chart-text {
+    padding: 1rem;
+    width: 30%;
 }
 
 @media only screen and (max-width: 580px) {
@@ -25,7 +36,16 @@
     }
 
     .chart-container {
-        height: 300px;
+        flex-direction: column;
         margin: 0;
+    }
+
+    .chart, .chart-text {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .line-chart, .pie-chart {
+        height: auto;
     }
 }
