@@ -4,14 +4,20 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer';
 import Cards from './components/layout/Cards';
+import SignUp from './components/layout/SignUp';
 
 function App() {
   return (
 	<Router>
 		<div className="App">
 			<Navbar/>
-			<Cards/>
-			<Footer/>
+			<Route exact path="/">
+				<Cards/>
+			</Route>
+			<Route path="/signup">
+				<SignUp />
+			</Route>
+		<Footer/>
 		</div>
 	</Router>
     
