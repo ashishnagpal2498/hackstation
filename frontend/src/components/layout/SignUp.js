@@ -51,7 +51,9 @@ class Signup extends Component {
     }
   
 
-    this.setState({ errors: errors });
+    this.setState({ errors: errors, formIsValid: formIsValid});
+
+    formIsValid && this.setState({ errorsImg: {}});
     return formIsValid;
   }
 
@@ -67,105 +69,58 @@ class Signup extends Component {
     e.preventDefault();
    
     if (this.handleValidation()) {
-      this.setState({ buttonTxt: "Click to Begin" });
+      this.setState({ buttonTxt: "Click to Begin", hasError: false});
     } else {
-      this.setState({ buttonTxt: "Form has errors" });
+      this.setState({ buttonTxt: "Form has errors", hasError: true });
     }
   }
-
  
   render() {
+    const Label = ({name = '', placeholder = ''}) => {
+      return <label htmlFor={name}>
+        <input
+          type="text"
+          name={name}
+          placeholder={placeholder}
+          className={this.state.errorsImg}
+          value={this.state.fields[name]}
+          onChange={this.handleChange.bind(this, name)}
+        />
+        <p className="errors-txt">
+          {this.state.errors[name]}
+        </p>
+    </label>
+    }
+
     return (
       <div className="Signup">
         <div className="container">
-          <div className="signup-wrapper">
-            <div className="signup-txt">
-            <h1>
-                Share Your Work <br /> in numbers
-              </h1>
-              <p>Get your working graph reminders for coding contests.</p>
-              <p>Share your work among your peers.</p>
+          <div className="signup-txt">
+            <h1>Share Your Work <br /> in numbers</h1>
+            <p>Get your working graph reminders for coding contests.</p>
+            <p>Share your work among your peers.</p>
+          </div>
+          <div>
+            <div className="form-header">
+              <p>Try it today <span>admire it later</span></p>
             </div>
-            <div className="signup-form">
-              <div className="form-header">
-                <p className="header-txt">
-                Try it today <span>admire it later</span>{" "}
-                </p>
-              </div>
-              <div className="form-wrapper">
-                <form
-                  className="form-group"
-                  onSubmit={this.contactSubmit.bind(this)}
-                >
+            <div className="form-wrapper">
+              <form className="form-group" onSubmit={this.contactSubmit.bind(this)}>
+                {Label({name:"firstname", placeholder:"First Name"})}
+                {Label({name:"lastname", placeholder:"Last Name"})}
+                {Label({name:"email", placeholder:"Email Address"})}
+                {Label({name:"password", placeholder:"Password"})}
 
-                  <label htmlFor="firstname">
-                    <input
-                      type="text"
-                      name="firstname"
-                      placeholder="First Name"
-                      className={this.state.errorsImg}
-                      value={this.state.fields["firstname"]}
-                      onChange={this.handleChange.bind(this, "firstname")}
-                    />
-                    <p className="errors-txt">
-                      {this.state.errors["firstname"]}
-                    </p>
-                  </label>
-
-                  <label htmlFor="lastname">
-                    <input
-                      type="text"
-                      name="lastname"
-                      placeholder="Last Name"
-                      className={this.state.errorsImg}
-                      value={this.state.fields["lastname"]}
-                      onChange={this.handleChange.bind(this, "lastname")}
-                    />
-                    <p className="errors-txt">
-                        {this.state.errors["lastname"]}
-                    </p>
-                  </label>
-
-                  <label htmlFor="email">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      className={this.state.errorsImg}
-                      value={this.state.fields["email"]}
-                      onChange={this.handleChange.bind(this, "email")}
-                    />
-                    <p className="errors-txt">
-                        {this.state.errors["email"]}
-                    </p>
-                  </label>
-                  <label htmlFor="password">
-                    <input
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                      className={this.state.errorsImg}
-                      value={this.state.fields["password"]}
-                      onChange={this.handleChange.bind(this, "password")}
-                    />
-                    <p className="errors-txt">
-                        {this.state.errors["password"]}
-                    </p>
-                  </label>
-                  <button type="submit" name="submit" onClick={()=> (this.state.buttonTxt === "Click to Begin") && this.props.onClose()}>
-                    {this.state.buttonTxt}
-                  </button>
-                </form>
-                <p className="terms-txt">
-                  By clicking the button, you are agreeing to our{" "}
-                  <span>Terms and Services</span>
-                </p>
-              </div>
+                <button type="submit" name="submit" className={this.state.hasError ? "errors-btn" : ""} onClick={()=> (this.state.buttonTxt === "Click to Begin") && this.props.onClose()}>
+                  {this.state.buttonTxt}
+                </button>
+              </form>
+              <p className="terms-txt">
+                By clicking the button, you are agreeing to our <span>Terms and Services</span>
+              </p>
             </div>
           </div>
         </div>
-        <footer>
-  </footer>
       </div>
     );
   }
