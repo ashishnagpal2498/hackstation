@@ -1,0 +1,46 @@
+.Introduction {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  color: #000 ;
+  font-weight: 800;
+}
+
+.intro-description {
+  width: 72%;
+  display: inline-block;
+text-align: center;
+margin: 0.5em 1em 2rem;
+color: #858585;
+}
+
+.get_started{
+background-color: #493323;
+color: white;
+padding: 15px 28px;
+text-align: center;
+font-size: 18px;
+border-radius: 12px;
+display: block;
+border: 3px solid transparent;
+margin-left: 44%;
+margin-bottom: 1.5rem;
+}
+
+.get_started:hover {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 3px solid #493323;
+  color: #493323;
+}
+
+.img{
+  height:100%;
+  width:100%;
+}
+
+img{
+  max-width: 100%;
+}
