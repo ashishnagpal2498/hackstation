@@ -29,7 +29,7 @@ function Cards() {
     ]);
 
     return (
-        <div className="Cards">
+        <div className="cards">
             {
                 cardData.map(({img, title, description, date, time}) => (
                     <Card
@@ -38,6 +38,7 @@ function Cards() {
                         description={description}
                         date={date}
                         time={time}
+                        key={title}
                     />
                 ))
             }

@@ -5,6 +5,7 @@ import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer';
 import Cards from './components/layout/Cards';
 import SignUp from './components/layout/SignUp';
+import Charts from './components/layout/Charts';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 			<Navbar/>
 			<Route exact path="/">
 				<Cards/>
+				<Charts/>
 			</Route>
 			<Route path="/signup">
 				<SignUp />
