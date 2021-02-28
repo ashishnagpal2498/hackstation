@@ -1,0 +1,17 @@
+body{
+	background-color: black;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+.headings{
+	color:#ff7b00;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*cont classes will be for contect/image containers */
+.cont1{
+	background-color:#907163;
+}
+.cont2{
+	background-color:#3a9e66;
+}
+

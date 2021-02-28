@@ -38,6 +38,7 @@ function Cards() {
                         description={description}
                         date={date}
                         time={time}
+                        key={title}
                     />
                 ))
             }

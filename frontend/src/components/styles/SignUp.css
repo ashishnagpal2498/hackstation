@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+.container{
+    scroll-behavior: smooth;
+    width: 80%;
+    margin: auto;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.signup-txt{
+    margin-top: 100px;
+    padding: 30px;
+}
+.signup-txt h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.form-header{
+    background: hsl(154, 59%, 51%);
+    height: 50px;
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px -1px #a3a5ae9d;
+    box-sizing: border-box;
+}
+.form-header p, span {
+    padding: 0;
+    margin: 0;
+}
+.form-header p{
+    font-weight: 600;
+}
+.form-header span{
+    font-weight: 300;
+}
+
+.form-wrapper{
+    margin: 0 20px 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-group input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid 1px hsl(249, 10%, 26%);
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+.form-group input:focus{
+    border: solid 2px hsl(248, 32%, 49%);
+}
+.form-group button{
+    width:100%;
+    background-color: #324DE0;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 3px grey; 
+    margin: 1.5rem 0 0.5rem;
+    user-select: none;
+}
+.form-group .errors-txt{
+    color: red;
+    font-size: 13px;
+    font-weight: 200;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.errors{
+    border: solid 2px #ff0000 !important;
+    background: url('../../images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.errors-btn{   
+    color: yellow !important;
+}
+
+.terms-txt{
+    color: hsl(249, 10%, 26%);
+    font-size: 13px;
+    font-weight: 200;
+    text-align: center;
+}
+.terms-txt span{
+    color: #ff7a7a;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media(max-width:900px){
+    .container{
+        width: 100%;
+        grid-template-columns: 100%;
+        margin-top: 20px;
+    }
+
+    .signup-txt{
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .signup-txt h1{
+        font-size: 25px;
+    }
+
+    .form-header{
+        height: 50px;
+        font-size: 14px;
+    }
+}
