@@ -2,8 +2,8 @@
   font-size: 2.5rem;
   text-align: center;
   font-family: Helvetica, sans-serif;
-  color: #000 ;
-  font-weight: 800;
+  color: #5b5b5b;
+  font-weight: 650;
 }
 
 .intro-description {
@@ -17,7 +17,7 @@ color: #858585;
 .get_started{
 background-color: #493323;
 color: white;
-padding: 15px 28px;
+padding: 15px 24px;
 text-align: center;
 font-size: 18px;
 border-radius: 12px;
