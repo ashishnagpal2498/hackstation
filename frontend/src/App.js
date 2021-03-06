@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Cards from './components/layout/Cards';
@@ -13,10 +13,15 @@ function App() {
 	<Router>
 		<div className="App">
 			<Navbar/>
-      <Introduction/>
-			<Cards/>
-			<Charts/>
-			<Footer/>
+            <Introduction/>
+			<Route exact path="/">
+				<Cards/>
+				<Charts/>
+			</Route>
+			<Route path="/signup">
+				<SignUp />
+			</Route>
+		<Footer/>
 		</div>
 	</Router>
 
