@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
-import FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome';
 
 const links = [
   { name: "home", to: "/" },
@@ -34,7 +34,7 @@ const Navbar = () => {
           ))}
           <NavLink
             exact
-            to="/login"
+            to="/signup"
             className="header-link  user"
             activeClassName="header-link-active"
           >
