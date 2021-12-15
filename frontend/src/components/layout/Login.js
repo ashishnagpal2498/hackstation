@@ -1,15 +1,17 @@
 import React, { Component } from "react";
+import socialMediaAuth from "../../auth/auth";
+import { googleProvider, githubProvider } from "../../config/authMethods";
 
 // CSS Style
-import "../styles/SignUp.css";
+import "../styles/Login.css";
 
-class Signup extends Component {
-  // Form fields data state
-  state = {
+class Login extends Component {
+// Form fields data state
+state = {
     fields: {},
     errors: {},
     errorsImg: "",
-    buttonTxt: "Register",
+    buttonTxt: "Log In",
   };
 
   // Handle validation function binding form fields state
@@ -19,39 +21,22 @@ class Signup extends Component {
     let errorsImg = {};
     let formIsValid = true;
 
-    // firstname validation
-    if (!fields["firstname"]) {
-      formIsValid = false;
-      this.setState({ errorsImg: "errors"});
-      errors["firstname"] = "Firstname cannot be empty";
-    }
-    if (typeof fields["firstname"] !== "undefined") {
-      if (!fields["firstname"].match(/^[a-zA-Z]+$/)) {
+    // username validation
+    if (!fields["username"]){
         formIsValid = false;
-        errors["firstname"] = "only letters";
-      }
-    }
-
-    // lastname validation
-    if (!fields["lastname"]){
-        formIsValid = false;
-        errors["lastname"] = "Lastname cannot be empty"
+        errorsImg["username"] = "errors";
+        errors["username"] = "username cannot be empty"
     };
 
     // password validation
     if (!fields["password"]){
         formIsValid = false;
+        errorsImg["password"] = "errors";
         errors["password"] = "Password cannot be empty"
     };
 
-    // Email validation
-    if (!fields["email"]) {
-      formIsValid = false;
-      errors["email"] = "Looks like this not an email";
-    }
-  
 
-    this.setState({ errors: errors, formIsValid: formIsValid});
+    this.setState({ errors: errors, formIsValid: formIsValid, errorsImg: errorsImg});
 
     formIsValid && this.setState({ errorsImg: {}});
     return formIsValid;
@@ -71,18 +56,31 @@ class Signup extends Component {
     if (this.handleValidation()) {
       this.setState({ buttonTxt: "Click to Begin", hasError: false});
     } else {
-      this.setState({ buttonTxt: "Form has errors", hasError: true });
+      this.setState({ buttonTxt: "Register", hasError: true });
     }
   }
- 
+
+  handleAuthentication(){
+    let fields = this.state.fields;
+    let formIsValid = true;
+
+    return formIsValid;
+  }
+
+  
   render() {
+    const mediaAuth = async (provider) => {
+        const res = await socialMediaAuth(provider);
+        console.log(res);
+    };
+   
     const Label = ({name = '', placeholder = ''}) => {
       return <label htmlFor={name}>
         <input
           type="text"
           name={name}
           placeholder={placeholder}
-          className={this.state.errorsImg}
+          className={this.state.errorsImg[name]}
           value={this.state.fields[name]}
           onChange={this.handleChange.bind(this, name)}
         />
@@ -93,9 +91,9 @@ class Signup extends Component {
     }
 
     return (
-      <div className="Signup">
+      <div className="Login">
         <div className="container">
-          <div className="signup-txt">
+          <div className="login-txt">
             <h1>Share Your Work <br /> in numbers</h1>
             <p>Get your working graph reminders for coding contests.</p>
             <p>Share your work among your peers.</p>
@@ -104,21 +102,31 @@ class Signup extends Component {
             <div className="form-header">
               <p>Try it today <span>admire it later</span></p>
             </div>
-            <div class="login">
-            <p>If you are already registered, <span id="login"><a href="/login">Login here.</a></span></p>
+            <div class="signup">
+            <p>If you are not registered, <span id="signup"><a href="/signup">Sign Up here.</a></span></p>
             
             </div>
             <div className="form-wrapper">
               <form className="form-group" onSubmit={this.contactSubmit.bind(this)}>
-                {Label({name:"firstname", placeholder:"First Name"})}
-                {Label({name:"lastname", placeholder:"Last Name"})}
-                {Label({name:"email", placeholder:"Email Address"})}
+                {Label({name:"username", placeholder:"Username"})}
                 {Label({name:"password", placeholder:"Password"})}
 
-                <button type="submit" name="submit" className={this.state.hasError ? "errors-btn" : ""} onClick={()=> (this.state.buttonTxt === "Click to Begin") && this.props.onClose()}>
+                <button type="submit" name="submit" className={this.state.hasError ? "errors-btn" : ""} >
                   {this.state.buttonTxt}
                 </button>
-              </form>
+              </form>  
+              
+                <div class="other-signIn-options-text">
+                    <p>-Or Sign In With-</p>
+                </div>
+
+                <div class="auth-btn">
+                    <button onClick = {() => mediaAuth(googleProvider)}><img src="/google_logo.png"></img> Google</button>
+                    
+                    <button onClick = {() => mediaAuth(githubProvider)}><img src="/github_logo.png"></img> <span>Github</span></button>
+                </div>
+
+             
               <p className="terms-txt">
                 By clicking the button, you are agreeing to our <span>Terms and Services</span>
               </p>
@@ -130,4 +138,5 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
+
+export default Login;

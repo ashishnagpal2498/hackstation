@@ -14,11 +14,11 @@
     justify-content: space-between;
 }
 
-.signup-txt{
+.login-txt{
     margin-top: 100px;
     padding: 30px;
 }
-.signup-txt h1{
+.login-txt h1{
     font-size: 50px;
     font-weight: 600;
     line-height: 1.2;
@@ -121,12 +121,12 @@
         margin-top: 20px;
     }
 
-    .signup-txt{
+    .login-txt{
         margin-top: 10px;
         padding: 10px;
         text-align: center;
     }
-    .signup-txt h1{
+    .login-txt h1{
         font-size: 25px;
     }
 
@@ -136,8 +136,32 @@
     }
 }
 
-#login{
+#signup{
     color:#ff7a7a;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.auth-btn button img{
+    width: 25px;
+    height: 25px;
+    margin: -0.4rem 0;
+}
+.auth-btn button{
+    padding: 0.5rem 1rem;
+    width: 47%;
+    margin: 0.5rem 0.5rem;
+    background-color: #324DE0;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 3px grey; 
+    user-select: none;
+}
+
+.auth-btn button span{
+    margin: 1rem 0;
 }

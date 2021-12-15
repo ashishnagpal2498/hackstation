@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer';
 import Cards from './components/layout/Cards';
 import SignUp from './components/layout/SignUp';
 import Charts from './components/layout/Charts';
+import Login from './components/layout/Login';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
 			<Route path="/signup">
 				<SignUp />
 			</Route>
+			<Route path="/login">
+				<Login />
+			</Route>
+			
 		<Footer/>
 		</div>
 	</Router>
