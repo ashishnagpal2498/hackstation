@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 5px 10%;
 }
@@ -8,7 +8,6 @@
 .header .header-brand {
   text-transform: uppercase;
   font-weight: 700;
-  margin-right: auto;
 }
 
 .header img {
@@ -55,17 +54,14 @@
 
 .header .header-link:hover {
   outline: 0;
+  /* border-bottom: 2px solid #000; */
+  text-decoration: underline;
+}
+.header .fa-user:hover {
   border-bottom: 2px solid #000;
 }
 
-@media all and (max-width: 600px) {
-  /* .header {
-    flex-direction: column;
-  } */
-  .header .header-brand {
-    margin: 0 auto;
-  }
-  .header img {
-    margin-left: 50px;
-  }
+.navbar-toggler {
+  padding: 0.1rem 0.6rem;
+  font-size: 1rem;
 }
