@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import FontAwesome from 'react-fontawesome';
-
+import {Navbar,Nav} from 'react-bootstrap'
 const links = [
   { name: "home", to: "/" },
   { name: "dashboard", to: "/dashboard" },
@@ -10,17 +10,18 @@ const links = [
   { name: "upcoming", to: "/upcoming" },
 ];
 
-const Navbar = () => {
+const Header = () => {
   return (
-    <header className="header">
-      <div className="header-brand">
+    <Navbar className="header" expand="lg">
+      <Navbar.Brand className="header-brand">
         <NavLink exact to="/">
-          <img src="/logo.png" alt="logo-here" />
+          <img src="/logo.png" alt="logo-here"/>
         </NavLink>
-      </div>
-      <nav className="header-nav">
-        <ul className="header-nav-links">
-          {links.map((link, id) => (
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+      <Nav>
+      {links.map((link, id) => (
             <li key={id} className="header-link-item">
               <NavLink
                 exact
@@ -32,7 +33,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           ))}
-          <NavLink
+           <NavLink
             exact
             to="/signup"
             className="header-link  user"
@@ -43,10 +44,10 @@ const Navbar = () => {
               size="2x"
             />
           </NavLink>
-        </ul>
-      </nav>
-    </header>
+      </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Header;

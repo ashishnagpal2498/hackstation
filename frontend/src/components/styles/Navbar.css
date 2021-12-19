@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 5px 10%;
 }
@@ -8,10 +8,9 @@
 .header .header-brand {
   text-transform: uppercase;
   font-weight: 700;
-  margin-right: auto;
 }
 
-.header img{
+.header img {
   width: 75px;
   vertical-align: middle;
 }
@@ -24,11 +23,11 @@
   padding-inline-start: 0;
 }
 
-.header .header-nav-links .user{
+.header .header-nav-links .user {
   margin-left: 100px;
 }
 
-.header .header-nav-links .user:hover{
+.header .header-nav-links .user:hover {
   border-bottom: none;
   color: #000;
 }
@@ -55,14 +54,14 @@
 
 .header .header-link:hover {
   outline: 0;
+  /* border-bottom: 2px solid #000; */
+  text-decoration: underline;
+}
+.header .fa-user:hover {
   border-bottom: 2px solid #000;
 }
 
-@media all and (max-width: 600px) {
-  .header {
-    flex-direction: column;
-  }
-  .header .header-brand {
-    margin: 0 auto;
-  }
+.navbar-toggler {
+  padding: 0.1rem 0.6rem;
+  font-size: 1rem;
 }
