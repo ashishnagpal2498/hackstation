@@ -1,13 +1,11 @@
 import React from 'react'
+import '../styles/Footer.css';
 
 const Footer = () => {
 	return (
 		<div className="footer-wrapper">
-			<div className="footer-logo">
-				<img src="" alt="footer"/>
-			</div>
 			<div className="footer-options">
-				
+				<p>Copyright 2021 All rights reserved.</p>
 			</div>
 		</div>
 	)
