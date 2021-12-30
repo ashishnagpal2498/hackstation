@@ -5,6 +5,7 @@
 .welcome-text{
     min-height: 75vh;  
     display: flex;
+        flex-wrap: wrap;
 }
 
 @-webkit-keyframes shadow-pop-tl {
@@ -42,7 +43,7 @@
       margin: 2rem;
       padding: 2rem;
       font-size: 1.2rem;
-      width: 60%;
+      width: 50%;
 }
 
 .about-text p{
@@ -55,6 +56,12 @@
     border: 2px solid rgb(100, 100, 100);
     background-color: aliceblue;
     border-radius: 12px;
+}
+
+.welcome-text img{
+        margin: 1rem;
+        width: 30rem;
+        height: 20rem;
 }
 
 .our-mission{
@@ -88,7 +95,7 @@
     text-decoration: underline;
 }
 
-.meet-our-team p{
+.meet-text{
     margin: 4rem;
     font-size: 1.5rem;
 }
@@ -137,7 +144,7 @@
       height: 40vh;
       border: 2px solid black;
       margin: 1rem;
-      padding: 12px;
+      padding: 1rem;
       font-size: 1.5rem;
       border-radius: 12px; 
       
@@ -147,4 +154,12 @@
         -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         background-color: aliceblue;
+}
+
+.team-card img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+
 }
