@@ -7,6 +7,7 @@ import Footer from './components/layout/Footer';
 import Cards from './components/layout/Cards';
 import SignUp from './components/layout/SignUp';
 import Charts from './components/layout/Charts';
+import About from './components/layout/About';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
 			</Route>
 			<Route path="/signup">
 				<SignUp />
+			</Route>
+			<Route path="/about">
+				<About />
 			</Route>
 		<Footer/>
 		</div>

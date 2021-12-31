@@ -2,12 +2,13 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+    min-height: 85vh;
 }
 .card {
     display: flex;
     flex-direction: column;
     background: rgb(250, 250, 250);
-		width: 300px;
+	width: 300px;
     padding: 1rem;
     margin: 1rem;
     border-radius: 15px;
