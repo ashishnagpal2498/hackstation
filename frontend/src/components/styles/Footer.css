@@ -1,8 +1,105 @@
-.footer-wrapper{
-    display: flex;
-    background-color: rgb(31, 30, 30);
-    color: white;
-    justify-content: center;
-    align-items: center;
-    
+.footer-wrapper {
+  background-color: #222222;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-row {
+  color: white;
+}
+
+.footer-options {
+    padding-bottom: 2rem;
+}
+
+.logo-img {
+  height: 100px;
+  width: 100px;
+}
+
+hr {
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 10 px;
+  margin-bottom: 10px;
+}
+
+.footer-icons {
+  color: white;
+  margin: 1%;
+}
+
+a {
+  color: lightgrey;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+::selection {
+  background: lightgray;
+  text-shadow: none;
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: #212529;
+}
+
+.footer-column:not(:first-child) {
+  @media (min-width: 768px) {
+    padding-top: 0rem;
+  }
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.nav-item .nav-link {
+  padding: 0.1rem 0;
+}
+
+.nav-item .nav-link {
+  color: lightgray;
+}
+
+.nav-item .footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+/* .fas {
+  margin-right: 0.5rem;
+} */
+
+.footer-coulmn ul {
+  display: inline-block;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+    footer {
+        align-content: center;
+        justify-content: center;
+    }
+
+    .footer-options {
+        justify-content: center;
+        align-content: center;
+    }
+
+    .footer-column {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
