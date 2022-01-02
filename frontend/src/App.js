@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer';
 import Cards from './components/layout/Cards';
 import SignUp from './components/layout/SignUp';
 import Charts from './components/layout/Charts';
+import About from './components/layout/About';
 import Login from './components/layout/Login';
 
 function App() {
@@ -20,10 +22,12 @@ function App() {
 			<Route path="/signup">
 				<SignUp />
 			</Route>
+			<Route path="/about">
+				<About />
+			</Route>
 			<Route path="/login">
 				<Login />
 			</Route>
-			
 		<Footer/>
 		</div>
 	</Router>
