@@ -8,6 +8,7 @@ import Cards from './components/layout/Cards';
 import SignUp from './components/layout/SignUp';
 import Charts from './components/layout/Charts';
 import About from './components/layout/About';
+
 import Login from './components/layout/Login';
 
 function App() {

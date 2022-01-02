@@ -7,13 +7,14 @@
 }
 
 .line-chart, .pie-chart {
-    height: 50vh;
     padding: 1rem;
+    margin: 1rem;
 }
 
 .chart-title {
     font-size: 2rem;
     padding: 0.5rem 0;
+    margin: 1rem;
 }
 
 .chart-container {
