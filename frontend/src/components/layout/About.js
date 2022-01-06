@@ -15,7 +15,7 @@ const About = () =>
 						fuga autem neque aspernatur iste maiores recusandae quaerat, numquam quo veritatis illo provident
 						voluptas tempore tenetur odio, possimus quasi non? Suscipit, recusandae dolorum. </p>
 				</div>
-				<img src="https://image.freepik.com/free-vector/customer-support-flat-illustration_23-2148892786.jpg" alt="About image" />
+				<img src="https://image.freepik.com/free-vector/customer-support-flat-illustration_23-2148892786.jpg" alt="About" />
 			</div>
 
 
@@ -33,13 +33,13 @@ const About = () =>
 				<p className="meet-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusamus architecto itaque, est voluptatibus sit id repudiandae sint. Pariatur iste nobis accusantium.</p>
 				<ul className="team-card">
 					<li><p> Member1 </p>
-						<img src="https://image.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg" alt="Member1 image" />
+						<img src="https://image.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg" alt="Member1" />
 					</li>
 					<li><p> Member2 </p>
-						<img src="https://image.freepik.com/free-photo/young-woman-with-round-glasses-yellow-sweater_273609-7091.jpg" alt="Member2 image" />
+						<img src="https://image.freepik.com/free-photo/young-woman-with-round-glasses-yellow-sweater_273609-7091.jpg" alt="Member2" />
 					</li>
 					<li><p> Member3 </p>
-						<img src="https://image.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg" alt="Member3 image" />
+						<img src="https://image.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg" alt="Member3" />
 					</li>
 				</ul>
 			</div>
