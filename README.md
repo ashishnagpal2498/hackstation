@@ -50,16 +50,17 @@ At Hackstation
 
 <h1 align= "center"><b> Open-Source</b></h1>
 
-<div align="center">
+<!-- <div align="center">
 <img src="./assets/github-files/hackoctober.png">
 </div>
 <h2 align= "center" style="padding: 10px"><b> Winter of Code</b></h2>
-<div align="center" style="padding: 20px 0 50px; display: flex;align-items:center">
-<span style="flex:1; padding:0 10px">
-<img src="./assets/github-files/DWOC.jpeg"></span>
-<span  style="flex:1;background-color:rgb(0,0,0);padding: 0 10px;">
-<img src="./assets/github-files/SWOC.png">
-</span>
+-->
+<h3 align="center"> 2022</h3>
+<div align="center" style="padding: 20px 0 50px; display: flex;justify-content:center"> 
+
+<!-- <span style="flex-basis:50%; padding:0 10px">
+<img src="./assets/github-files/DWOC.jpeg" width="50%"></span> -->
+<img style="flex-basis:50%" src="./assets/github-files/script_winter_of_code.jfif">
 
 </div>
 
@@ -75,6 +76,10 @@ At Hackstation
 
 ## 💥 How to Contribute ?
 - If you wish to contribute kindly check the [CONTRIBUTING.md](https://github.com/ashishnagpal2498/hackstation/blob/master/CONTRIBUTING.md)🤝
+- For **Open-source** contributors. Please start working on issue only when the issue is been assigned to you. 
+- Comment on the issue if you want to work on it.
+- The issue will be assigned on first come first basis.
+- One working issue per participant.
 ## Features Implemented later
 
 
