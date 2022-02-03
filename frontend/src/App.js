@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer';
 import Cards from './components/layout/Cards';
-import SignUp from './components/layout/SignUp';
+import SignUp from './components/pages/SignUp';
 import Charts from './components/layout/Charts';
-import About from './components/layout/About';
+import About from './components/pages/About';
 
-function App() {
+const App = () => {
 	return (
 		<Router>
 			<div className="App">
